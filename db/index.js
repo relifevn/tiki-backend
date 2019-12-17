@@ -14,8 +14,8 @@ const db = mysql.createConnection({
 });
 
 db.connect(function (err) {
-  if (err) {console.warn('[ERROR] Connect to mysql failed!', err)};
+  if (err) { console.warn('[ERROR] Connect to mysql failed!', err) };
   console.log("Connected to mysql!");
 });
 
-exports = { db }
+module.exports = db;

@@ -46,6 +46,8 @@ CREATE TABLE IF NOT EXISTS User (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+INSERT INTO User (type, username, password, email, credit_card_number, balance) VALUES ("owner", "test", "test", "test@gmail.com", "21312321", 0.0);
+
 CREATE TABLE IF NOT EXISTS Orders (
     id INT AUTO_INCREMENT PRIMARY KEY,
     product_id INT NOT NULL,
@@ -65,4 +67,10 @@ CREATE TABLE IF NOT EXISTS Review (
     message VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+ALTER TABLE `merchants` ADD FOREIGN KEY (`admin_id`) REFERENCES `users` (`id`);
+
+CREATE INDEX `product_status` ON `products` (`merchant_id`, `status`);
+
+CREATE UNIQUE INDEX `products_index_1` ON `products` (`id`);
 
