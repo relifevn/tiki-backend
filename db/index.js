@@ -1,4 +1,5 @@
 const mysql = require('mysql');
+const config = process.env;
 
 /**
  * Use terminal:
@@ -6,11 +7,11 @@ const mysql = require('mysql');
  */
 
 const db = mysql.createConnection({
-  host: "remotemysql.com",
-  port: "3306",
-  user: "9RAYkjHRiB",
-  password: "Gkzvg0gsiT",
-  database: "9RAYkjHRiB"
+  host: config.HOST || "remotemysql.com",
+  port: config.PORT || "3306",
+  user: config.USER || "P0qdxyaYNp",
+  password: config.PASSWORD || "oB3HNUgEo4",
+  database: config.USER || "9RAYkjHRiB",
 });
 
 db.connect(function (err) {
