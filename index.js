@@ -13,10 +13,11 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 // routers
-app.use(require('./routes'));
+// app.use(require('./routes'));
 
 // Serve static assets from the /public folder
 app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use('/.well-known', express.static(path.join(__dirname, 'public')));
 app.use('/doc', express.static(path.join(__dirname, 'doc')));
 
 const port = process.env.PORT || 1337;
