@@ -1,13 +1,9 @@
 {
-    "applinks": {
-        "apps": [],
-        "details": [{
-            "appID": "D3KQX62K1A.com.example.photoapp",
-            "paths": ["/albums"]
-            },
-            {
-            "appID": "D3KQX62K1A.com.example.videoapp",
-            "paths": ["/videos"]
-        }]
-    }
+  "applinks": {
+    "apps": [],
+    "details": [{
+      "appID": "3B5BSRH5CE.com.anttech.tagbizz",
+      "paths": ["/bizzdetail"]
+    }]
+  }
 }
