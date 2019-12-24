@@ -1,15 +1,13 @@
 {
-  "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appID": "HKJGHKJG.com.facebook.ios",
-        "paths": [ "NOT /e/*", "*", "/", “/archives/201?/* ]
-      },
-      {
-         "appID": "JKHKJJHK.com.twitter.ios",
-         "paths": [ "NOT /e/*", "*", "/", “/archives/200?/* ]
-      }
-    ]
-  }
+    "applinks": {
+        "apps": [],
+        "details": [{
+            "appID": "D3KQX62K1A.com.example.photoapp",
+            "paths": ["/albums"]
+            },
+            {
+            "appID": "D3KQX62K1A.com.example.videoapp",
+            "paths": ["/videos"]
+        }]
+    }
 }
